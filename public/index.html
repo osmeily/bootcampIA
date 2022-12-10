@@ -3,13 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../dist/output.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c9b9a90d4f.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BootcampIA</title>
 </head>
 <body>
     <main>
+        <nav class="w-full bg-darkBlue flex flex-row items-center justify-between px-4 py-1 md:justify-around md:px-0 relative">
+            <img src="../src/assets/logoIA.png" alt="Logo" width="100px">
+            <span class="text-white md:hidden" id="menu-icon">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </span>
+            <ul class="hidden md:flex flex-row items-center justify-between text-white gap-4">
+                <li class="">
+                    <a href="#">Pasos</a>
+                </li>
+                <li class="">
+                    <a href="#">Preguntas</a>
+                </li>
+                <li class="">
+                    <a href="#">Formulario</a>
+                </li>
+                <li class="">
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+            <div class="bg-darkBlue opacity-90 absolute right-0 top-full text-white rounded-b-sm p-5 font-semibold text-right hidden md:hidden" id="menu">
+                <ul class=" flex flex-col gap-3 w-24">
+                    <li class="border-solid border-white border-b-2 border-opacity-50">
+                        <a href="#pasos">Pasos</a>
+                    </li>
+                    <li class="border-solid border-white border-b-2 border-opacity-50">
+                        <a href="#preguntas_frecuentes">Preguntas</a>
+                    </li>
+                    <li class="border-solid border-white border-b-2 border-opacity-50">
+                        <a href="#formulario">Formulario</a>
+                    </li>
+                    <li class="border-solid border-white border-b-2 border-opacity-50">
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </main>
 
     <script src="../src/index.js "></script>
