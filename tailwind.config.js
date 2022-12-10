@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       colors: {
         darkBlue: "#162644",
-      }
+      },
+      minWidth: {
+        m150: "150px",
+      },
     },
   },
   plugins: [],
