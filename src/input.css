@@ -4,6 +4,9 @@
 
 @layer components {
     .layout {
-        @apply w-full px-3 flex items-center justify-between md:w-4/5;
+        @apply w-full px-3 py-3 flex items-center justify-between md:w-4/5 md:py-5;
+    }
+    .input {
+        @apply border-solid border-zinc-400 border-2 rounded-md p-1 w-full;
     }
 }
