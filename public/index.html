@@ -1,112 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="../dist/output.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c9b9a90d4f.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/c9b9a90d4f.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BootcampIA</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="h-screen">
-        <nav class="w-full bg-darkBlue flex flex-row items-center justify-between px-4 py-1 md:justify-around md:px-0 relative">
-            <img src="../src/assets/logoIA.png" alt="Logo" width="100px">
-            <span class="text-white md:hidden" id="menu-icon">
-                <i class="fa-solid fa-bars fa-2xl"></i>
-            </span>
-            <ul class="hidden md:flex flex-row items-center justify-between text-white gap-4">
-                <li class="">
-                    <a href="#">Pasos</a>
-                </li>
-                <li class="">
-                    <a href="#">Preguntas</a>
-                </li>
-                <li class="">
-                    <a href="#">Formulario</a>
-                </li>
-                <li class="">
-                    <a href="#">Contacto</a>
-                </li>
+      <nav class="w-full bg-darkBlue flex flex-col justify-center items-center">
+        <div class="layout px-4 py-1 md:px-0 relative">
+          <img src="../src/assets/logoIA.png" alt="Logo" width="100px" />
+          <span class="text-white md:hidden" id="menu-icon">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+          </span>
+          <ul
+            class="hidden md:flex flex-row items-center justify-between text-white gap-4"
+          >
+            <li class="">
+              <a href="#">Pasos</a>
+            </li>
+            <li class="">
+              <a href="#">Preguntas</a>
+            </li>
+            <li class="">
+              <a href="#">Formulario</a>
+            </li>
+            <li class="">
+              <a href="#">Contacto</a>
+            </li>
+          </ul>
+          <div
+            class="bg-darkBlue opacity-90 absolute right-0 top-full text-white rounded-b-sm p-5 font-semibold text-right hidden md:hidden"
+            id="menu"
+          >
+            <ul class="flex flex-col gap-3 w-24">
+              <li
+                class="border-solid border-white border-b-2 border-opacity-50"
+              >
+                <a href="#pasos">Pasos</a>
+              </li>
+              <li
+                class="border-solid border-white border-b-2 border-opacity-50"
+              >
+                <a href="#preguntas_frecuentes">Preguntas</a>
+              </li>
+              <li
+                class="border-solid border-white border-b-2 border-opacity-50"
+              >
+                <a href="#formulario">Formulario</a>
+              </li>
+              <li
+                class="border-solid border-white border-b-2 border-opacity-50"
+              >
+                <a href="#contacto">Contacto</a>
+              </li>
             </ul>
-            <div class="bg-darkBlue opacity-90 absolute right-0 top-full text-white rounded-b-sm p-5 font-semibold text-right hidden md:hidden" id="menu">
-                <ul class=" flex flex-col gap-3 w-24">
-                    <li class="border-solid border-white border-b-2 border-opacity-50">
-                        <a href="#pasos">Pasos</a>
-                    </li>
-                    <li class="border-solid border-white border-b-2 border-opacity-50">
-                        <a href="#preguntas_frecuentes">Preguntas</a>
-                    </li>
-                    <li class="border-solid border-white border-b-2 border-opacity-50">
-                        <a href="#formulario">Formulario</a>
-                    </li>
-                    <li class="border-solid border-white border-b-2 border-opacity-50">
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <footer class="bg-darkBlue w-full flex flex-row flex-wrap justify-between gap-50 px-4 py-6 md:justify-around">
-            <div class="min-w-m150 py-5 px-2 font-semibold">
-                <h6 class="text-yellow-400 text-sm">INFORMACIÓN LEGAL</h6>
-                <ul class="text-xs text-white">
-                    <li>
-                        <a href="#">Términos y Condiciones</a>
-                    </li>
-                    <li>
-                        <a href="#">Política de Privacidad</a>
-                    </li>
-                    <li>
-                        <a href="#">Política de Cookies</a>
-                    </li>
-                    <li>
-                        <a href="#">Política de Datos</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="min-w-m150 py-5 px-2 font-semibold">
-                <h6 class="text-yellow-400 text-sm">EXPLORA</h6>
-                <ul class="text-xs text-white">
-                    <li>
-                        <a href="#">¿Quiénes Somos?</a>
-                    </li>
-                    <li>
-                        <a href="#">Publicaciones</a>
-                    </li>
-                    <li>
-                        <a href="#">Trabaja con Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#">Educación para el Desarrollo</a>
-                    </li>
-                    <li>
-                        <a href="#">Mesa de Servicios Tecnológicos</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="min-w-m150 px-2 py-5"> 
-                <h6 class="text-yellow-400 font-semibold text-sm">CONTACTA CON NOSOTROS</h6>
-                <ul class="text-lg text-white flex flex-row gap-4">
-                    <li>
-                        <i class="fa-brands fa-facebook"></i>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-twitter"></i>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-instagram"></i>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-linkedin"></i>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-youtube"></i>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+          </div>
+        </div>
+      </nav>
+      <section class="p-6 flex flex-col justify-center items-center gap-4">
+        <h4
+          class="text-darkPurple font-semibold text-lg text-center py-2 md:text-2xl"
+        >
+          PASO A PASO
+        </h4>
+        <div
+          id="steps-container"
+          class="grid grid-cols-1 gap-6 w-fit sm:grid-cols-2 md:gap-x-20 preLg:grid-cols-4 preLg:gap-x-4 lg:gap-x-10 2xl:gap-20"
+        ></div>
+        <button
+          type="button"
+          class="p-4 mt-4 min-w-m250 bg-darkLilac relative rounded-md text-amber-500 font-bold border-solid border-black border-2 md:w-80 md:p-5 after:absolute after:w-5 after:h-5 after:border-t-0 after:border-l-0 after:border-r-2 after:border-b-2 after:top-full after:left-2/4 after:ml-[-10px] after:content[''] after:transform after:rotate-45 after:mt-[-8px] after:bg-darkLilac after:border-b-black after:border-r-black after:z-20"
+        >
+        <span class="bg-transparent border-solid border-black border-2 absolute z-10 left-2 top-2 w-full h-full rounded-md after:absolute after:w-5 after:h-5 after:border-t-0 after:border-t-transparent after:border-l-0 after:border-r-2 after:border-b-2 after:top-full after:left-[49%] after:ml-[-10px] after:content[''] after:transform after:rotate-45 after:mt-[-8px] after:bg-white after:border-b-black after:border-r-black after:mix-blend-screen after:z-0
+
+        before:absolute before:rounded-md before:w-5 before:h-5 before:border-t-0 before:border-t-transparent before:border-l-0 before:border-r-2 before:border-b-2 before:top-full before:left-full before:ml-[-10px] before:content[''] before:transform before:translate-x-1 before:mt-[-8px] before:bg-white before:border-b-white before:border-r-white before:mix-blend-screen before:z-0">
+        </span>
+          Preguntas Frecuentes
+        </button>
+      </section>
+
+      <footer
+        class="bg-darkBlue w-full flex flex-col justify-center items-center"
+      >
+        <div
+          class="layout flex flex-row flex-wrap justify-between py-6 items-start md:px-0"
+        >
+          <div class="min-w-m150 py-5 font-semibold">
+            <h6 class="text-yellow-400 text-sm">INFORMACIÓN LEGAL</h6>
+            <ul class="text-xs text-white">
+              <li>
+                <a href="#">Términos y Condiciones</a>
+              </li>
+              <li>
+                <a href="#">Política de Privacidad</a>
+              </li>
+              <li>
+                <a href="#">Política de Cookies</a>
+              </li>
+              <li>
+                <a href="#">Política de Datos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="min-w-m150 py-5 px-2 font-semibold">
+            <h6 class="text-yellow-400 text-sm">EXPLORA</h6>
+            <ul class="text-xs text-white">
+              <li>
+                <a href="#">¿Quiénes Somos?</a>
+              </li>
+              <li>
+                <a href="#">Publicaciones</a>
+              </li>
+              <li>
+                <a href="#">Trabaja con Nosotros</a>
+              </li>
+              <li>
+                <a href="#">Educación para el Desarrollo</a>
+              </li>
+              <li>
+                <a href="#">Mesa de Servicios Tecnológicos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="min-w-m150 px-2 py-5">
+            <h6 class="text-yellow-400 font-semibold text-sm">
+              CONTACTA CON NOSOTROS
+            </h6>
+            <ul class="text-lg text-white flex flex-row gap-4">
+              <li>
+                <i class="fa-brands fa-facebook"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-youtube"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
 
-    <script src="../src/index.js "></script>
-</body>
+    <template id="step-template">
+      <div class="flex flex-col justify-center items-center w-48 gap-2">
+        <div
+          id="step-circle"
+          class="rounded-full border-solid border-4 w-14 h-14 overflow-hidden flex flex-row items-center justify-center"
+        >
+          <img
+            id="step-icon"
+            class=""
+            src="/src/assets/icono4.png"
+            alt="Icon"
+            width="30"
+          />
+        </div>
+        <div id="top-line" class="w-4/5 h-2"></div>
+        <div
+          id="step-title"
+          class="w-full h-7 text-center font-bold text-lg text-white"
+        ></div>
+        <p
+          id="step-content"
+          class="w-4/5 text-xs h-16 text-gray-800 text-center md:text-base md:h-120"
+        ></p>
+        <div id="bottom-line" class="w-4/5 h-2"></div>
+      </div>
+    </template>
+
+    <script src="../src/index.js"></script>
+    <script src="../src/templateScripts/step.js"></script>
+  </body>
 </html>
