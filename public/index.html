@@ -78,14 +78,191 @@
           type="button"
           class="p-4 mt-4 min-w-m250 bg-darkLilac relative rounded-md text-amber-500 font-bold border-solid border-black border-2 md:w-80 md:p-5 after:absolute after:w-5 after:h-5 after:border-t-0 after:border-l-0 after:border-r-2 after:border-b-2 after:top-full after:left-2/4 after:ml-[-10px] after:content[''] after:transform after:rotate-45 after:mt-[-8px] after:bg-darkLilac after:border-b-black after:border-r-black after:z-20"
         >
-        <span class="bg-transparent border-solid border-black border-2 absolute z-10 left-2 top-2 w-full h-full rounded-md after:absolute after:w-5 after:h-5 after:border-t-0 after:border-t-transparent after:border-l-0 after:border-r-2 after:border-b-2 after:top-full after:left-[49%] after:ml-[-10px] after:content[''] after:transform after:rotate-45 after:mt-[-8px] after:bg-white after:border-b-black after:border-r-black after:mix-blend-screen after:z-0
-
-        before:absolute before:rounded-md before:w-5 before:h-5 before:border-t-0 before:border-t-transparent before:border-l-0 before:border-r-2 before:border-b-2 before:top-full before:left-full before:ml-[-10px] before:content[''] before:transform before:translate-x-1 before:mt-[-8px] before:bg-white before:border-b-white before:border-r-white before:mix-blend-screen before:z-0">
-        </span>
+          <span
+            class="bg-transparent border-solid border-black border-2 absolute z-10 left-2 top-2 w-full h-full rounded-md after:absolute after:w-5 after:h-5 after:border-t-0 after:border-t-transparent after:border-l-0 after:border-r-2 after:border-b-2 after:top-full after:left-[49%] after:ml-[-10px] after:content[''] after:transform after:rotate-45 after:mt-[-8px] after:bg-white after:border-b-black after:border-r-black after:mix-blend-screen after:z-0 before:absolute before:rounded-md before:w-5 before:h-5 before:border-t-0 before:border-t-transparent before:border-l-0 before:border-r-2 before:border-b-2 before:top-full before:left-full before:ml-[-10px] before:content[''] before:transform before:translate-x-1 before:mt-[-8px] before:bg-white before:border-b-white before:border-r-white before:mix-blend-screen before:z-0"
+          >
+          </span>
           Preguntas Frecuentes
         </button>
       </section>
 
+      <section class="flex flex-col justify-center items-center">
+        <div class="layout flex-col">
+          <h5 class="text-zinc-900 font-semibold text-lg md:text-xl">
+            DATOS PERSONALES
+          </h5>
+          <p class="text-xs text-center md:text-base">
+            Para iniciar el proceso, ingresa tu número de documento y haz clic
+            en consultar
+          </p>
+          <div class="flex flex-col text-xs min-w-m250 items-center">
+            <label
+              class="font-bold border-b-solid border-b-amber-500 border-b-4 w-full mt-3 py-2 md:w-96"
+              for="id"
+              >Número de identificación:
+            </label>
+            <input
+              type="number"
+              maxlength="10"
+              id="id"
+              name="id"
+              class="input my-2 md:w-96"
+            />
+            <button
+              class="bg-rose-900 p-2 rounded-2xl text-sm text-white my-2 font-semibold w-4/5 md:w-2/4"
+            >
+              Consultar
+            </button>
+            <form action="" class="py-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-2 min-w-m250 md:w-96 md:py-3">
+                <div>
+                  <label class="font-bold w-full" for="name">Nombres: </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    disabled
+                    class="input"
+                  />
+                </div>
+                <div>
+                  <label class="font-bold w-full" for="lastname"
+                    >Apellidos:
+                  </label>
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    disabled
+                    class="input"
+                  />
+                </div>
+                <div>
+                  <label class="font-bold w-full" for="email"
+                    >Correo Electrónico:
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    disabled
+                    class="input"
+                  />
+                </div>
+                <div>
+                  <label class="font-bold w-full" for="phone">Celular: </label>
+                  <input
+                    type="number"
+                    id="phone"
+                    name="phone"
+                    disabled
+                    class="input"
+                  />
+                </div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 min-w-m250 md:w-96 md:py-5">
+                <div>
+                  <label class="font-bold" for="program"
+                    >Tipo de Programa:
+                  </label>
+                  <select
+                    name="programOptions"
+                    id="programOption"
+                    class="input"
+                  >
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="FullStack">FullStack</option>
+                    <option value="Ciencia">Ciencia de Datos</option>
+                    <option value="IA">Inteligencia Artificial</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="font-bold" for="modality">Modalidad: </label>
+                  <select name="modality" id="modality" class="input">
+                    <option value="Presencial">Presencial</option>
+                    <option value="Virtual">Virtual</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="font-bold" for="name">Nombres:</label>
+                  <input type="text" id="names" name="names" class="input" />
+                </div>
+                <div>
+                  <label class="font-bold" for="lastname">Apellidos: </label>
+                  <input
+                    type="text"
+                    id="lastnames"
+                    name="lastnames"
+                    class="input"
+                  />
+                </div>
+                <div>
+                  <label class="font-bold" for="documentType"
+                    >Tipo de Documento:</label
+                  >
+                  <select name="documentType" id="documentType" class="input">
+                    <option value="Cédula de Ciudadanía">
+                      Cédula de Ciudadanía
+                    </option>
+                    <option value="Cédula de Extranjería">
+                      Cédula de Extranjería
+                    </option>
+                    <option value="Pasaporte">Pasaporte</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="font-bold" for="documentNumber"
+                    >Número de Documento:</label
+                  >
+                  <input
+                    type="number"
+                    id="documentNumber"
+                    name="documentNumber"
+                    class="input"
+                  />
+                </div>
+                <div>
+                  <label class="font-bold" for="residency"
+                    >Departamento de Residencia</label
+                  >
+                  <select name="residency" id="residency" class="input">
+                    <option value="Antioquia">Antioquia</option>
+                    <option value="Regional">Cali</option>
+                    <option value="Cundinamarca">Cundinamarca</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="font-bold" for="city"
+                    >Ciudad de Residencia</label
+                  >
+                  <select name="city" id="city" class="input">
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Medellín">Medellín</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="font-bold" for="email"
+                    >Correo Electrónico:</label
+                  >
+                  <input type="email" id="email" name="email" class="input" />
+                </div>
+                <div>
+                  <label class="font-bold" for="phone">Celular:</label>
+                  <input
+                    type="number"
+                    maxlength="10"
+                    id="cellphone"
+                    name="cellphone"
+                    class="input"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
       <footer
         class="bg-darkBlue w-full flex flex-col justify-center items-center"
       >
