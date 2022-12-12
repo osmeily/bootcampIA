@@ -15,11 +15,16 @@ module.exports = {
       },
       height: {
         120: "120px",
+        vh90: "90vh",
+        vh95: "95vh",
       },
       screens: {
         sm: "500px",
         preLg: "900px"
       },
+      animation: {
+        "pulse-slow": "pulse 1s linear",
+      }
     },
   },
   plugins: [],

@@ -64,6 +64,59 @@
           </div>
         </div>
       </nav>
+
+      <section class="">
+        <div class="relative">
+          <ul id="slider">
+            <li class="relative animate-pulse-slow">
+              <img
+                src="../src/assets/slider1.png"
+                alt="Tecnología"
+                class="w-full h-full object-cover"
+              />
+            </li>
+            <li class="relative hidden animate-pulse-slow">
+              <img
+                src="../src/assets/slider2.png"
+                alt="Inteligencia Artificial"
+                class="w-full h-full object-cover"
+              />
+            </li>
+            <li class="relative hidden animate-pulse-slow">
+              <img
+                src="../src/assets/slider3.png"
+                alt="Únete"
+                class="w-full h-full object-cover"
+              />
+            </li>
+            <li class="relative hidden animate-pulse-slow">
+              <img
+                src="../src/assets/slider4.png"
+                alt="NodeJS"
+                class="w-full h-full object-cover"
+              />
+            </li>
+            <li class="relative hidden animate-pulse-slow">
+              <img
+                src="../src/assets/slider5.png"
+                alt="Empleo"
+                class="w-full h-full object-cover"
+              />
+            </li>
+          </ul>
+          <div class="absolute px-2 flex h-full w-full top-0 left-0 md:px-5">
+            <div class="my-auto w-full flex justify-between">
+              <button class="text-darkLilac bg-white opacity-60 w-12 rounded-full p-3" onclick="prev()">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="text-darkLilac bg-white opacity-60 w-12 rounded-full p-3" onclick="next()">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="p-6 flex flex-col justify-center items-center gap-4">
         <h4
           class="text-darkPurple font-semibold text-lg text-center py-2 md:text-2xl"
@@ -114,7 +167,9 @@
               Consultar
             </button>
             <form action="" class="py-6">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-2 min-w-m250 md:w-96 md:py-3">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-2 min-w-m250 md:w-96 md:py-3"
+              >
                 <div>
                   <label class="font-bold w-full" for="name">Nombres: </label>
                   <input
@@ -160,7 +215,9 @@
                   />
                 </div>
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 min-w-m250 md:w-96 md:py-5">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-4 min-w-m250 md:w-96 md:py-5"
+              >
                 <div>
                   <label class="font-bold" for="program"
                     >Tipo de Programa:
@@ -361,5 +418,6 @@
 
     <script src="../src/index.js"></script>
     <script src="../src/templateScripts/step.js"></script>
+    <script src="../src/templateScripts/slider.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+// Steps data
 const stepTemplate = document.getElementById('step-template').content
 const stepContainer = document.getElementById('steps-container')
 
@@ -38,6 +39,10 @@ const steps = [
 
 document.addEventListener('DOMContentLoaded', () => {
     setSteps()
+
+    setInterval(() => {
+        next()
+    }, 6000)
 })
 
 const setSteps = () => {
