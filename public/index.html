@@ -106,10 +106,16 @@
           </ul>
           <div class="absolute px-2 flex h-full w-full top-0 left-0 md:px-5">
             <div class="my-auto w-full flex justify-between">
-              <button class="text-darkLilac bg-white opacity-60 w-12 rounded-full p-3" onclick="prev()">
+              <button
+                class="text-darkLilac bg-white opacity-60 w-12 rounded-full p-3"
+                onclick="prev()"
+              >
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
-              <button class="text-darkLilac bg-white opacity-60 w-12 rounded-full p-3" onclick="next()">
+              <button
+                class="text-darkLilac bg-white opacity-60 w-12 rounded-full p-3"
+                onclick="next()"
+              >
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
@@ -128,6 +134,7 @@
           class="grid grid-cols-1 gap-6 w-fit sm:grid-cols-2 md:gap-x-20 preLg:grid-cols-4 preLg:gap-x-4 lg:gap-x-10 2xl:gap-20"
         ></div>
         <button
+          id="questions-btn"
           type="button"
           class="p-4 mt-4 min-w-m250 bg-darkLilac relative rounded-md text-amber-500 font-bold border-solid border-black border-2 md:w-80 md:p-5 after:absolute after:w-5 after:h-5 after:border-t-0 after:border-l-0 after:border-r-2 after:border-b-2 after:top-full after:left-2/4 after:ml-[-10px] after:content[''] after:transform after:rotate-45 after:mt-[-8px] after:bg-darkLilac after:border-b-black after:border-r-black after:z-20"
         >
@@ -137,6 +144,66 @@
           </span>
           Preguntas Frecuentes
         </button>
+      </section>
+      <section class="bg-gray-pattern hidden" id="questions">
+        <div class="layout flex-col m-auto pb-10 lg:py-9">
+          <p class="text-2xl text-center py-6">
+            ¿Tienes alguna pregunta?<br />
+            Estamos acá para responderte.
+          </p>
+          <div class="flex flex-wrap gap-6 justify-around lg:max-w-[830px] lg:justify-evenly">
+            <div
+              class="bg-gray-300 p-4 border-dashed border-2 border-gray-700 sm:max-w-sm md:max-w-xs lg:max-w-sm"
+            >
+              <h6
+                class="text-lg text-gray-700 font-bold border-dotted border-b-2 border-b-gray-700"
+              >
+                ¿Quiénes Somos?
+              </h6>
+              <p class="text-sm md:text-base">
+                Somos una empresa de tecnología que busca capacitarte en el
+                mundo de la tecnología y la innovación.
+              </p>
+            </div>
+            <div
+              class="bg-gray-300 p-4 border-dashed border-2 border-gray-700 sm:max-w-sm md:max-w-xs lg:max-w-sm"
+            >
+              <h6
+                class="text-lg text-gray-700 font-bold border-dotted border-b-2 border-b-gray-700"
+              >
+                Nuestro Objetivo
+              </h6>
+              <p class="text-sm md:text-base">
+                Es brindarte la mejor experiencia de aprendizaje junto a
+                profesionales que manejan las habilidades de mayor demanda
+                actual.
+              </p>
+            </div>
+            <div
+              class="bg-gray-300 p-4 border-dashed border-2 border-gray-700 sm:max-w-sm md:max-w-xs lg:max-w-sm"
+            >
+              <h6
+                class="text-lg text-gray-700 font-bold border-dotted border-b-2 border-b-gray-700"
+              >
+                ¿Cómo formar parte del Programa?
+              </h6>
+              <p class="text-sm md:text-base">
+                Para formar parte del programa debes ingresar a la sección de
+                'Datos Personales' y diligenciar el formulario con tus datos.
+                Una vez diligenciado el formulario, recibirás un correo
+                electrónico con la información de tu proceso de inscripción.
+              </p>
+            </div>
+
+            <picture class="hidden lg:block">
+              <img
+                src="../src/assets/questions.png"
+                alt="thinking"
+                width="384"
+              />
+            </picture>
+          </div>
+        </div>
       </section>
 
       <section class="flex flex-col justify-center items-center">
