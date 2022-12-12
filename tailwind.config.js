@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./public/index.html", "./src/templateScripts/*.js"],
+  content: ["./src/**/*.{html,js}", "./public/index.html", "./src/scripts/*.js"],
   theme: {
     extend: {
       colors: {
@@ -12,6 +12,9 @@ module.exports = {
       minWidth: {
         m150: "150px",
         m250: "250px",
+      },
+      minHeight: {
+        m400: "400px",
       },
       width:{
         480: "480px",
@@ -30,6 +33,7 @@ module.exports = {
       },
       backgroundImage: {
         "gray-pattern": "url('/src/assets/fondo_gris.png')",
+        "animated-pattern": "url('/src/assets/banner-inferior.png')",
       }
     },
   },
