@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,7 +13,9 @@
   </head>
   <body>
     <main class="h-screen">
-      <nav class="w-full bg-darkBlue flex flex-col justify-center items-center">
+      <nav
+        class="w-full bg-darkBlue flex flex-col justify-center items-center fixed top-0 z-40"
+      >
         <div class="layout px-4 py-1 md:px-0 relative">
           <img src="../src/assets/logoIA.png" alt="Logo" width="100px" />
           <span class="text-white md:hidden" id="menu-icon">
@@ -23,16 +25,16 @@
             class="hidden md:flex flex-row items-center justify-between text-white gap-4"
           >
             <li class="">
-              <a href="#">Pasos</a>
+              <a href="#pasos">Pasos</a>
+            </li>
+            <li class="preguntas">
+              <a href="#preguntas_frecuentes">Preguntas</a>
             </li>
             <li class="">
-              <a href="#">Preguntas</a>
+              <a href="#formulario">Formulario</a>
             </li>
             <li class="">
-              <a href="#">Formulario</a>
-            </li>
-            <li class="">
-              <a href="#">Contacto</a>
+              <a href="#contacto">Contacto</a>
             </li>
           </ul>
           <div
@@ -46,7 +48,7 @@
                 <a href="#pasos">Pasos</a>
               </li>
               <li
-                class="border-solid border-white border-b-2 border-opacity-50"
+                class="preguntas border-solid border-white border-b-2 border-opacity-50"
               >
                 <a href="#preguntas_frecuentes">Preguntas</a>
               </li>
@@ -65,7 +67,7 @@
         </div>
       </nav>
 
-      <section class="">
+      <section class="mt-[62px]">
         <div class="relative">
           <ul id="slider">
             <li class="relative animate-pulse-slow">
@@ -123,7 +125,10 @@
         </div>
       </section>
 
-      <section class="p-6 flex flex-col justify-center items-center gap-4">
+      <section
+        class="p-14 flex flex-col justify-center items-center gap-4"
+        id="pasos"
+      >
         <h4
           class="text-darkPurple font-semibold text-lg text-center py-2 md:text-2xl"
         >
@@ -146,12 +151,17 @@
         </button>
       </section>
       <section class="bg-gray-pattern hidden" id="questions">
-        <div class="layout flex-col m-auto pb-10 lg:py-9">
+        <div
+          class="layout flex-col m-auto pb-10 lg:py-9"
+          id="preguntas_frecuentes"
+        >
           <p class="text-2xl text-center py-6">
             ¿Tienes alguna pregunta?<br />
             Estamos acá para responderte.
           </p>
-          <div class="flex flex-wrap gap-6 justify-around lg:max-w-[830px] lg:justify-evenly">
+          <div
+            class="flex flex-wrap gap-6 justify-around lg:max-w-[830px] lg:justify-evenly"
+          >
             <div
               class="bg-gray-300 p-4 border-dashed border-2 border-gray-700 sm:max-w-sm md:max-w-xs lg:max-w-sm"
             >
@@ -206,7 +216,10 @@
         </div>
       </section>
 
-      <section class="flex flex-col justify-center items-center">
+      <section
+        class="flex flex-col justify-center items-center py-12"
+        id="formulario"
+      >
         <div class="layout flex-col">
           <h5 class="text-zinc-900 font-semibold text-lg md:text-xl">
             DATOS PERSONALES
@@ -310,7 +323,7 @@
                 </div>
                 <div>
                   <label class="font-bold" for="name">Nombres:</label>
-                  <input type="text" id="names" name="names" class="input" />
+                  <input type="text" id="names" name="names" class="input" oninput="this.value = this.value.replace(/[^a-z]/, '')" />
                 </div>
                 <div>
                   <label class="font-bold" for="lastname">Apellidos: </label>
@@ -319,6 +332,7 @@
                     id="lastnames"
                     name="lastnames"
                     class="input"
+                    oninput="this.value = this.value.replace(/[^a-z]/, '')" 
                   />
                 </div>
                 <div>
@@ -344,6 +358,8 @@
                     id="documentNumber"
                     name="documentNumber"
                     class="input"
+                    min="1"
+                    max="99999"
                   />
                 </div>
                 <div>
@@ -385,13 +401,33 @@
               </div>
             </form>
           </div>
+          <div class="text-xs text-center py-2 md:text-base">
+            <input type="checkbox" id="cbox2" value="data_privacy" required/>
+            <label for="cbox2"
+              >He leído y acepto la política de Privacidad de Datos</label
+            >
+          </div>
+          <div class="text-xs text-center py-2 md:text-base">
+            <input type="checkbox" id="cbox3" value="terms" required/>
+            <label for="cbox3"
+              >He leído y acepto los términos y condiciones del programa
+              BootcampIA</label
+            >
+          </div>
+          <button
+            class="bg-rose-900 p-2 rounded-2xl text-sm text-white my-2 font-semibold w-2/3 sm:w-[192px]"
+          >
+            Registrar
+          </button>
         </div>
       </section>
+
       <footer
         class="bg-darkBlue w-full flex flex-col justify-center items-center"
       >
         <div
-          class="layout flex flex-row flex-wrap justify-between py-6 items-start md:px-0"
+          class="layout flex flex-row flex-wrap justify-between py-6 items-start md:px-0 relative"
+          id="contacto"
         >
           <div class="min-w-m150 py-5 font-semibold">
             <h6 class="text-yellow-400 text-sm">INFORMACIÓN LEGAL</h6>
@@ -455,9 +491,14 @@
         </div>
       </footer>
     </main>
+    <div class="fixed mr-4 right-0 bottom-10 text-white flex flex-col justify-center cursor-pointer items-center bg-amber-500 rounded-full p-5 w-4 h-4 md:mr-10" id="to-top">
+      <span class=""><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
 
     <template id="step-template">
-      <div class="flex flex-col justify-center items-center w-48 gap-2 rounded-lg transform transition duration-500 hover:scale-110 hover:border">
+      <div
+        class="flex flex-col justify-center items-center w-48 gap-2 rounded-lg transform transition duration-500 hover:scale-110 hover:border"
+      >
         <div
           id="step-circle"
           class="rounded-full border-solid border-4 w-14 h-14 overflow-hidden flex flex-row items-center justify-center"

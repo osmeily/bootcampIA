@@ -23,6 +23,7 @@ function animateCard(element) {
 window.addEventListener('DOMContentLoaded', () => {
     const stepCard = document.querySelector('#step-1');
     const parent = stepCard.parentNode;
+
     let counter = 0;
 
     document.addEventListener('scroll', () => {
@@ -36,12 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
                     counter = 0;
                 }
             }, 1000);
-        } else {
-            const cards = parent.children;
-            cards.forEach(card => {
-                card.classList.remove('scale-110');
-                card.classList.remove('border');
-            });
-        }
+        } 
     });
 });
