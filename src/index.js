@@ -8,8 +8,7 @@ menuIcon.addEventListener('click', () => {
     burgerMenu.classList.toggle('flex')
     burgerMenu.classList.toggle('hidden')})
 
-questionsbtn.addEventListener('click', () => {
-    console.log('click')
+questionsbtn.addEventListener('click', () => { 
     questions.classList.toggle('flex')
     questions.classList.toggle('hidden')}
 )

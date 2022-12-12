@@ -56,6 +56,7 @@ const setSteps = () => {
         const bottomLine = stepClone.querySelector('#bottom-line')
 
         stepTitle.textContent = step.title
+        stepTitle.parentNode.id = `step-${step.id}`
         stepTitle.classList.add(step.background)
         stepContent.textContent = step.content
         stepCircle.classList.add(step.border)
