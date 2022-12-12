@@ -323,7 +323,13 @@
                 </div>
                 <div>
                   <label class="font-bold" for="name">Nombres:</label>
-                  <input type="text" id="names" name="names" class="input" oninput="this.value = this.value.replace(/[^a-z]/, '')" />
+                  <input
+                    type="text"
+                    id="names"
+                    name="names"
+                    class="input"
+                    oninput="this.value = this.value.replace(/[^a-z]/, '')"
+                  />
                 </div>
                 <div>
                   <label class="font-bold" for="lastname">Apellidos: </label>
@@ -332,7 +338,7 @@
                     id="lastnames"
                     name="lastnames"
                     class="input"
-                    oninput="this.value = this.value.replace(/[^a-z]/, '')" 
+                    oninput="this.value = this.value.replace(/[^a-z]/, '')"
                   />
                 </div>
                 <div>
@@ -402,13 +408,13 @@
             </form>
           </div>
           <div class="text-xs text-center py-2 md:text-base">
-            <input type="checkbox" id="cbox2" value="data_privacy" required/>
+            <input type="checkbox" id="cbox2" value="data_privacy" required />
             <label for="cbox2"
               >He leído y acepto la política de Privacidad de Datos</label
             >
           </div>
           <div class="text-xs text-center py-2 md:text-base">
-            <input type="checkbox" id="cbox3" value="terms" required/>
+            <input type="checkbox" id="cbox3" value="terms" required />
             <label for="cbox3"
               >He leído y acepto los términos y condiciones del programa
               BootcampIA</label
@@ -419,6 +425,49 @@
           >
             Registrar
           </button>
+        </div>
+      </section>
+
+      <section>
+        <div class="layout justify-center m-auto md:w-11/12 pb-24">
+          <div id="cards-container" class="grid grid-cols-1 w-fit
+          sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5" >
+            <div
+              class="card bg-darkPurple"
+              id="card-1"
+            >
+              <p class="absolute text-xl font-bold -top-1 right-[90px] z-20">1</p>
+              <p class="text-center text-white font-semibold">Ingresa tu número de identificación</p>
+            </div>
+            <div
+              class="card bg-grayBlue"
+              id="card-2"
+            >
+              <p class="absolute text-xl font-bold -top-1 right-[90px] z-20">2</p>
+              <p class="text-center text-white font-semibold">Haz clic en el botón de consulta</p>
+            </div>
+            <div
+              class="card bg-purple-500"
+              id="card-3"
+            >
+              <p class="absolute text-xl font-bold -top-1 right-[90px] z-20">3</p>
+              <p class="text-center text-white font-semibold">Ingresa tus datos personales</p>
+            </div>
+            <div
+              class="card bg-orange-300"
+              id="card-4"
+            >
+              <p class="absolute text-xl font-bold -top-1 right-[90px] z-20">4</p>
+              <p class="text-center text-white font-semibold">Selecciona el programa y modalidad que prefieras</p>
+            </div>
+            <div
+              class="card bg-darkLilac"
+              id="card-5"
+            >
+              <p class="absolute text-xl font-bold -top-1 right-[90px] z-20">5</p>
+              <p class="text-center text-white font-semibold">Registra tus datos y espera nuestro mensaje</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -491,7 +540,10 @@
         </div>
       </footer>
     </main>
-    <div class="fixed mr-4 right-0 bottom-10 text-white flex flex-col justify-center cursor-pointer items-center bg-amber-500 rounded-full p-5 w-4 h-4 md:mr-10" id="to-top">
+    <div
+      class="fixed mr-4 right-0 bottom-10 text-white flex flex-col justify-center cursor-pointer items-center bg-amber-500 rounded-full p-5 w-4 h-4 md:mr-10"
+      id="to-top"
+    >
       <span class=""><i class="fa-solid fa-arrow-up"></i></span>
     </div>
 
@@ -524,9 +576,39 @@
       </div>
     </template>
 
+    <template id="card-template">
+      <div
+        class="flex flex-col justify-center items-center w-48 gap-2 rounded-lg transform transition duration-500 hover:scale-110 hover:border"
+      >
+        <div
+          id="step-circle"
+          class="rounded-full border-solid border-4 w-14 h-14 overflow-hidden flex flex-row items-center justify-center"
+        >
+          <img
+            id="step-icon"
+            class=""
+            src="/src/assets/icono4.png"
+            alt="Icon"
+            width="30"
+          />
+        </div>
+        <div id="top-line" class="w-4/5 h-2"></div>
+        <div
+          id="step-title"
+          class="w-full h-7 text-center font-bold text-lg text-white"
+        ></div>
+        <p
+          id="step-content"
+          class="w-4/5 text-xs h-16 text-gray-800 text-center md:text-[15px] md:leading-5 md:h-120"
+        ></p>
+        <div id="bottom-line" class="w-4/5 h-2"></div>
+      </div>
+    </template>
+
     <script src="../src/index.js"></script>
     <script src="../src/templateScripts/step.js"></script>
     <script src="../src/templateScripts/slider.js"></script>
     <script src="../src/templateScripts/stepsAnimation.js"></script>
+    <script src="../src/templateScripts/cardsAnimation.js"></script>
   </body>
 </html>
