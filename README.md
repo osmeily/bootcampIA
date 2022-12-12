@@ -1,4 +1,5 @@
-# BootcampIA!
+![logoIA](https://user-images.githubusercontent.com/91287870/207154487-391e23e2-7610-4f0d-80eb-6ff94af4d1ed.png)
+
 
 ## ABOUT THE PROJECT
 
@@ -18,6 +19,7 @@ The page was build with the next technologies
 - [TailwindCSS](https://tailwindcss.com/)
 ![image](https://user-images.githubusercontent.com/91287870/207147797-c722685e-57e7-48f2-831c-32d638e37d7d.png)
 - [JavaScript](https://www.javascript.com/)
+- [FontAwesome](https://fontawesome.com/)
 
 ---
 
@@ -28,6 +30,13 @@ The page was build with the next technologies
 
 - We used GitHub's public API to get some users 
 ![image](https://user-images.githubusercontent.com/91287870/207148273-569e0567-1161-467d-b30d-5c64287fa817.png)
+
+- This is the git graph with all the branches
+![image](https://user-images.githubusercontent.com/91287870/207153901-7605a431-7f5e-4561-b5e7-967454912c58.png)
+
+- This is the pull request history
+![image](https://user-images.githubusercontent.com/91287870/207154142-6c60ea6d-5bfe-4a01-9d51-5db94de85bda.png)
+
 
 ---
 
