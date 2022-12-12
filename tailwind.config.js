@@ -13,6 +13,9 @@ module.exports = {
         m150: "150px",
         m250: "250px",
       },
+      width:{
+        480: "480px",
+      },
       height: {
         120: "120px",
         vh90: "90vh",
@@ -24,6 +27,9 @@ module.exports = {
       },
       animation: {
         "pulse-slow": "pulse 1s linear",
+      },
+      backgroundImage: {
+        "gray-pattern": "url('/src/assets/fondo_gris.png')",
       }
     },
   },
