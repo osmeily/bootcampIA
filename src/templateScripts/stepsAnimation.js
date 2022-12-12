@@ -10,7 +10,7 @@ function isInViewport(element) {
     );
 }
 
-function animateCard(element) {
+function animateStepCard(element) {
     element.classList.add('scale-110');
     element.classList.add('border');
 
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (isInViewport(stepCard) && !animationActive) {
             animationActive = true;
             setInterval(() => {
-                animateCard(parent.children[counter]);
+                animateStepCard(parent.children[counter]);
                 if(counter < 3) {
                     counter++;
                 } else {
